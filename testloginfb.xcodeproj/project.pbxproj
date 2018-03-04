@@ -13,6 +13,9 @@
 		5BDB9D0E204B5A140050D8EB /* testloginfb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D0C204B5A140050D8EB /* testloginfb.xcdatamodeld */; };
 		5BDB9D10204B5A140050D8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB9D0F204B5A140050D8EB /* Assets.xcassets */; };
 		5BDB9D13204B5A140050D8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB9D11204B5A140050D8EB /* LaunchScreen.storyboard */; };
+		5BDB9D1C204BCA1F0050D8EB /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */; };
+		5BDB9D1E204BCAA50050D8EB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */; };
+		5BDB9D21204BCB080050D8EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D20204BCB080050D8EB /* Extensions.swift */; };
 		F1801A3D45A123CECEA5FD5A /* Pods_testloginfb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AFFFB9EDFABAAAC1374C55 /* Pods_testloginfb.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		5BDB9D0F204B5A140050D8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BDB9D12204B5A140050D8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BDB9D14204B5A140050D8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5BDB9D20204BCB080050D8EB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE441660FFD77075EDFC9D92 /* Pods-testloginfb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testloginfb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb.debug.xcconfig"; sourceTree = "<group>"; };
 		DB721913B7DA9E85C688C72F /* Pods-testloginfb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testloginfb.release.xcconfig"; path = "Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +86,8 @@
 		5BDB9D04204B5A140050D8EB /* testloginfb */ = {
 			isa = PBXGroup;
 			children = (
+				5BDB9D1F204BCAFC0050D8EB /* Tools */,
+				5BDB9D1A204BCA0C0050D8EB /* Controller */,
 				5BDB9D05204B5A140050D8EB /* AppDelegate.swift */,
 				5BDB9D07204B5A140050D8EB /* ViewController.swift */,
 				5BDB9D09204B5A140050D8EB /* Main.storyboard */,
@@ -89,6 +97,23 @@
 				5BDB9D0C204B5A140050D8EB /* testloginfb.xcdatamodeld */,
 			);
 			path = testloginfb;
+			sourceTree = "<group>";
+		};
+		5BDB9D1A204BCA0C0050D8EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */,
+				5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BDB9D1F204BCAFC0050D8EB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB9D20204BCB080050D8EB /* Extensions.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDB9D1E204BCAA50050D8EB /* ProfileController.swift in Sources */,
+				5BDB9D21204BCB080050D8EB /* Extensions.swift in Sources */,
 				5BDB9D0E204B5A140050D8EB /* testloginfb.xcdatamodeld in Sources */,
 				5BDB9D08204B5A140050D8EB /* ViewController.swift in Sources */,
+				5BDB9D1C204BCA1F0050D8EB /* CustomTabBarController.swift in Sources */,
 				5BDB9D06204B5A140050D8EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
