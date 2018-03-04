@@ -13,9 +13,14 @@
 		5BDB9D0E204B5A140050D8EB /* testloginfb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D0C204B5A140050D8EB /* testloginfb.xcdatamodeld */; };
 		5BDB9D10204B5A140050D8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB9D0F204B5A140050D8EB /* Assets.xcassets */; };
 		5BDB9D13204B5A140050D8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB9D11204B5A140050D8EB /* LaunchScreen.storyboard */; };
+		5BDB9D1C204BCA1F0050D8EB /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */; };
+		5BDB9D1E204BCAA50050D8EB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */; };
+		5BDB9D21204BCB080050D8EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D20204BCB080050D8EB /* Extensions.swift */; };
+		F1801A3D45A123CECEA5FD5A /* Pods_testloginfb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AFFFB9EDFABAAAC1374C55 /* Pods_testloginfb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42AFFFB9EDFABAAAC1374C55 /* Pods_testloginfb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testloginfb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDB9D02204B5A140050D8EB /* testloginfb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testloginfb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDB9D05204B5A140050D8EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDB9D07204B5A140050D8EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		5BDB9D0F204B5A140050D8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BDB9D12204B5A140050D8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BDB9D14204B5A140050D8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5BDB9D20204BCB080050D8EB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE441660FFD77075EDFC9D92 /* Pods-testloginfb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testloginfb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb.debug.xcconfig"; sourceTree = "<group>"; };
+		DB721913B7DA9E85C688C72F /* Pods-testloginfb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testloginfb.release.xcconfig"; path = "Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1801A3D45A123CECEA5FD5A /* Pods_testloginfb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		275603A0E307EBB9433043C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE441660FFD77075EDFC9D92 /* Pods-testloginfb.debug.xcconfig */,
+				DB721913B7DA9E85C688C72F /* Pods-testloginfb.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36C1D82DF2414A9CF1566C56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42AFFFB9EDFABAAAC1374C55 /* Pods_testloginfb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BDB9CF9204B5A140050D8EB = {
 			isa = PBXGroup;
 			children = (
 				5BDB9D04204B5A140050D8EB /* testloginfb */,
 				5BDB9D03204B5A140050D8EB /* Products */,
+				275603A0E307EBB9433043C5 /* Pods */,
+				36C1D82DF2414A9CF1566C56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,8 @@
 		5BDB9D04204B5A140050D8EB /* testloginfb */ = {
 			isa = PBXGroup;
 			children = (
+				5BDB9D1F204BCAFC0050D8EB /* Tools */,
+				5BDB9D1A204BCA0C0050D8EB /* Controller */,
 				5BDB9D05204B5A140050D8EB /* AppDelegate.swift */,
 				5BDB9D07204B5A140050D8EB /* ViewController.swift */,
 				5BDB9D09204B5A140050D8EB /* Main.storyboard */,
@@ -67,6 +99,23 @@
 			path = testloginfb;
 			sourceTree = "<group>";
 		};
+		5BDB9D1A204BCA0C0050D8EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */,
+				5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BDB9D1F204BCAFC0050D8EB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB9D20204BCB080050D8EB /* Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDB9D17204B5A140050D8EB /* Build configuration list for PBXNativeTarget "testloginfb" */;
 			buildPhases = (
+				3298187969D46E5A0EF162F1 /* [CP] Check Pods Manifest.lock */,
 				5BDB9CFE204B5A140050D8EB /* Sources */,
 				5BDB9CFF204B5A140050D8EB /* Frameworks */,
 				5BDB9D00204B5A140050D8EB /* Resources */,
+				EBED915E72BB3E3F5D7BDE74 /* [CP] Embed Pods Frameworks */,
+				F2FAA8EA597E676DE2946F75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,13 +186,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3298187969D46E5A0EF162F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testloginfb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBED915E72BB3E3F5D7BDE74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2FAA8EA597E676DE2946F75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testloginfb/Pods-testloginfb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BDB9CFE204B5A140050D8EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDB9D1E204BCAA50050D8EB /* ProfileController.swift in Sources */,
+				5BDB9D21204BCB080050D8EB /* Extensions.swift in Sources */,
 				5BDB9D0E204B5A140050D8EB /* testloginfb.xcdatamodeld in Sources */,
 				5BDB9D08204B5A140050D8EB /* ViewController.swift in Sources */,
+				5BDB9D1C204BCA1F0050D8EB /* CustomTabBarController.swift in Sources */,
 				5BDB9D06204B5A140050D8EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +389,7 @@
 		};
 		5BDB9D18204B5A140050D8EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE441660FFD77075EDFC9D92 /* Pods-testloginfb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -284,12 +398,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jenriquelopez.gt.testloginfb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5BDB9D19204B5A140050D8EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB721913B7DA9E85C688C72F /* Pods-testloginfb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jenriquelopez.gt.testloginfb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

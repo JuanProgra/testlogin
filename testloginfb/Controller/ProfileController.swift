@@ -1,27 +1,27 @@
 //
-//  ViewController.swift
+//  ProfileController.swift
 //  testloginfb
 //
-//  Created by Juan Lopez on 3/03/18.
+//  Created by Juan Lopez on 4/03/18.
 //  Copyright © 2018 Juan Lopez. All rights reserved.
 //
 
 import UIKit
-import FBSDKLoginKit
 
-class ViewController: UITableViewController {
+class ProfileController: UITableViewController {
     let colorPrimary = UIColor(r: 204, g: 153, b: 102, a: 1)
     let colorBlack = UIColor(r: 32, g: 32, b: 32, a: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.title = "Usuarios"
+
+        navigationItem.title = "Perfil"
 
         self.navigationController?.navigationBar.tintColor = colorPrimary
         self.navigationController?.navigationBar.barTintColor = UIColor.black
         self.navigationController?.navigationBar.titleTextAttributes =
                 [NSAttributedStringKey.foregroundColor: colorPrimary]
+
     }
 
     // MARK: - Table view data source
@@ -35,7 +35,4 @@ class ViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
-
 }
-
