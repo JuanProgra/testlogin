@@ -27,7 +27,7 @@ class ViewController: UITableViewController {
                 [NSAttributedStringKey.foregroundColor: colorPrimary]
 
         validateLoginFB()
-        //setValuesTest()
+        setValuesTest()
     }
 
     func validateLoginFB() {
