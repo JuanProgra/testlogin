@@ -8,5 +8,6 @@ target 'testloginfb' do
   # Pods for testloginfb
 
    pod 'FBSDKLoginKit'
+   pod 'Firebase/Auth'
 
 end
