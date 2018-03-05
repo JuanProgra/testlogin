@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B172AAD204C9FD100C175F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B172AAC204C9FD100C175F0 /* GoogleService-Info.plist */; };
+		5B48D3531E18956200A1EF8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48D3521E18956200A1EF8E /* LoginViewController.swift */; };
+		5B832291204CF50900C44D94 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832290204CF50900C44D94 /* UserModel.swift */; };
+		5B832294204CF79A00C44D94 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832293204CF79A00C44D94 /* SubViewController.swift */; };
 		5BDB9D06204B5A140050D8EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D05204B5A140050D8EB /* AppDelegate.swift */; };
 		5BDB9D08204B5A140050D8EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB9D07204B5A140050D8EB /* ViewController.swift */; };
 		5BDB9D0B204B5A140050D8EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDB9D09204B5A140050D8EB /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		42AFFFB9EDFABAAAC1374C55 /* Pods_testloginfb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testloginfb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B172AAC204C9FD100C175F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B48D3521E18956200A1EF8E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5B832290204CF50900C44D94 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		5B832293204CF79A00C44D94 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		5BDB9D02204B5A140050D8EB /* testloginfb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testloginfb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDB9D05204B5A140050D8EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDB9D07204B5A140050D8EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B83228F204CF4F300C44D94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B832290204CF50900C44D94 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5BDB9CF9204B5A140050D8EB = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +102,7 @@
 		5BDB9D04204B5A140050D8EB /* testloginfb */ = {
 			isa = PBXGroup;
 			children = (
+				5B83228F204CF4F300C44D94 /* Models */,
 				5BDB9D1F204BCAFC0050D8EB /* Tools */,
 				5BDB9D1A204BCA0C0050D8EB /* Controller */,
 				5BDB9D05204B5A140050D8EB /* AppDelegate.swift */,
@@ -95,6 +112,7 @@
 				5BDB9D11204B5A140050D8EB /* LaunchScreen.storyboard */,
 				5BDB9D14204B5A140050D8EB /* Info.plist */,
 				5BDB9D0C204B5A140050D8EB /* testloginfb.xcdatamodeld */,
+				5B172AAC204C9FD100C175F0 /* GoogleService-Info.plist */,
 			);
 			path = testloginfb;
 			sourceTree = "<group>";
@@ -104,6 +122,8 @@
 			children = (
 				5BDB9D1B204BCA1F0050D8EB /* CustomTabBarController.swift */,
 				5BDB9D1D204BCAA50050D8EB /* ProfileController.swift */,
+				5B48D3521E18956200A1EF8E /* LoginViewController.swift */,
+				5B832293204CF79A00C44D94 /* SubViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDB9D13204B5A140050D8EB /* LaunchScreen.storyboard in Resources */,
+				5B172AAD204C9FD100C175F0 /* GoogleService-Info.plist in Resources */,
 				5BDB9D10204B5A140050D8EB /* Assets.xcassets in Resources */,
 				5BDB9D0B204B5A140050D8EB /* Main.storyboard in Resources */,
 			);
@@ -215,12 +236,18 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -251,9 +278,12 @@
 			files = (
 				5BDB9D1E204BCAA50050D8EB /* ProfileController.swift in Sources */,
 				5BDB9D21204BCB080050D8EB /* Extensions.swift in Sources */,
+				5B832291204CF50900C44D94 /* UserModel.swift in Sources */,
 				5BDB9D0E204B5A140050D8EB /* testloginfb.xcdatamodeld in Sources */,
 				5BDB9D08204B5A140050D8EB /* ViewController.swift in Sources */,
 				5BDB9D1C204BCA1F0050D8EB /* CustomTabBarController.swift in Sources */,
+				5B832294204CF79A00C44D94 /* SubViewController.swift in Sources */,
+				5B48D3531E18956200A1EF8E /* LoginViewController.swift in Sources */,
 				5BDB9D06204B5A140050D8EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
